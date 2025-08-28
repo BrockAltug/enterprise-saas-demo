@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
 import ErrorBoundary from "../src/components/ErrorBoundary"
-import { ThemeProvider } from "next-themes"
+import { ThemeProvider } from "../src/components/ThemeProvider"
 
 export const metadata: Metadata = {
   title: "Enterprise SaaS Platform Demo",

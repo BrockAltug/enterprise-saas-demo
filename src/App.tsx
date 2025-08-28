@@ -1,18 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "../src/components/Layout/Sidebar"
-import { Topbar } from "../src/components/Layout/Topbar"
-import { DashboardPage } from "../src/pages/Dashboard"
-import { AnalyticsPage } from "../src/pages/Analytics"
-import { UsersPage } from "../src/pages/Users"
-import { BillingPage } from "../src/pages/Billing"
-import { SettingsPage } from "../src/pages/Settings"
-import { LoginPage } from "../src/pages/Login"
-import { ThemeProvider } from "../src/components/ThemeProvider"
-import ErrorBoundary from "../src/components/ErrorBoundary"
+import { Sidebar } from "./components/Layout/Sidebar"
+import { Topbar } from "./components/Layout/Topbar"
+import { DashboardPage } from "./pages/Dashboard"
+import { AnalyticsPage } from "./pages/Analytics"
+import { UsersPage } from "./pages/Users"
+import { BillingPage } from "./pages/Billing"
+import { SettingsPage } from "./pages/Settings"
+import { LoginPage } from "./pages/Login"
+import { ThemeProvider } from "./components/ThemeProvider"
+import ErrorBoundary from "./components/ErrorBoundary"
 
-export default function Page() {
+function App() {
   const [activeTab, setActiveTab] = useState("dashboard")
   const [isAuthenticated, setIsAuthenticated] = useState(false)
 
@@ -57,3 +57,5 @@ export default function Page() {
     </ThemeProvider>
   )
 }
+
+export default App

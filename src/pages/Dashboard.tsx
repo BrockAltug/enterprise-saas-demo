@@ -18,7 +18,6 @@ import {
   RefreshCw,
 } from "lucide-react"
 
-
 export function DashboardPage() {
   return (
     <div className="flex-1 overflow-auto">
