@@ -1,28 +1,23 @@
-import type React from "react"
-import type { Metadata } from "next"
-import "./globals.css"
-import ErrorBoundary from "../src/components/ErrorBoundary"
-import { ThemeProvider } from "../src/components/ThemeProvider"
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Enterprise SaaS Platform Demo",
-  description: "A comprehensive multi-tenant SaaS platform demonstration",
-  generator: "v0.app",
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.app',
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
-        <ErrorBoundary>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-            {children}
-          </ThemeProvider>
-        </ErrorBoundary>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+        {children}
       </body>
     </html>
   )
