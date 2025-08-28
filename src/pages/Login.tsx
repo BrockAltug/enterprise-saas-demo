@@ -22,7 +22,6 @@ export function LoginPage({ onLogin }: LoginPageProps) {
     e.preventDefault()
     onLogin()
   }
-
   
   const handleForgotPassword = (e: React.FormEvent) => {
     e.preventDefault()
