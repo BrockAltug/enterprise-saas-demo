@@ -153,6 +153,7 @@ export function BillingPage() {
                 </div>
                 <span className="text-lg font-bold">${currentPlan.price}</span>
               </div>
+              
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
