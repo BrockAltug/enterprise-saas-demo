@@ -36,6 +36,7 @@ export function SettingsPage() {
   const [twoFactorEnabled, setTwoFactorEnabled] = useState(false)
   const [ssoEnabled, setSsoEnabled] = useState(true)
 
+  
   const handleNotificationChange = (key: string) => {
     setNotifications((prev) => ({
       ...prev,
