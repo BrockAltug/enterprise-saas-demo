@@ -5,7 +5,7 @@
 This interactive demo presents a fully designed **multi-tenant SaaS platform interface**, built to demonstrate the sophistication, polish, and functionality that enterprise-grade software solutions can deliver.  
 
 <p align="center">
-  <img src="./enterprise-saas.png" alt="Enterprise SaaS Platform Dashboard" width="800"/>
+  <img src="public/enterprise-saas.png" alt="Enterprise SaaS Platform Dashboard" width="800"/>
 </p>
 
 ---
